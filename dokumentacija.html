@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matej Forjan">
+        <meta name="description" content="26.08.2022.">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+        <link href="css/mforjan.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="navigacija">
+                <div class="padajuci">
+                    <button class="padajuci-gumb">PADAJUĆI IZBORNIK</button>
+                    <div class="padajuci-sadrzaj">
+                        
+                        <a href="index.php">Početna</a>
+                        <a href="o_autoru.html">Informacije o autoru</a>
+                        
+                    </div>
+                </div> 
+            </div>
+
+            <div class = "pozicijaLoga">
+                <a href = "index.php">
+                    <img class = "logo" src = "materijali/logo.png" alt = "Logo">
+                </a>
+            </div>
+
+            <h1 class = "naslov" style = "text-align: center">
+                DOKUMENTACIJA PROJEKTA
+            </h1>
+
+        </header>
+
+        <section>
+
+            <table class="display" id="tablica2">
+                <thead>
+                    <tr>
+                        <th>Opis projektnog zadatka</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>Tema ovog projektnog zadatka je "Auto otpad". U projektu se pojavljuju 4 vrste korisnika, a to su: neregistrirani
+                        korisnik, registrirani korisnik, moderator te administrator. Administrator je tip korisnika koji ima najveće ovlasti dok 
+                        neregistrirani korisnik ima najmanje ovlasti. Korisnici mogu kreirati, pregledavati te ažurirati razne kategorije 
+                        poput marki vozila, kategorija dijelova, dijelova vozila, zahtjeva za procjene, stanja računa. Osim toga, imaju 
+                        mogućnost kupovine dijelova vozila te prodaje vozila.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="display" id="tablica2">
+                <thead>
+                    <tr>
+                        <th>Opis projektnog rješenja</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>Kao što je navedeno u opisu projektnog zadatka, administrator ima najveće ovlasti. Njegove ovlasti su sljedeće: 
+                        kreiranje/pregledavanje/ažuriranje marki vozila, dodjeljivanje moderatora odabranoj marki vozila, 
+                        kreiranje/pregledavanje/ažuriranje kategorija dijelova, pregled dnevnika rada te sve funkcionalnosti koje imaju i 
+                        ostali tipovi korisnika. Moderator ima sljedeće mogućnosti: kreiranje/pregledavanje/ažuriranje dijelova koje je 
+                        izvadio iz kupljenog vozila, pregled popisa svojih prihvaćenih procjena, pregled zahtjeva za procjenu vozila, 
+                        unos procjene za vozilo te sve funkcionalnosti koje imaju registrirani i neregistrirani korisnik. Registrirani 
+                        korisnik ima sljedeće mogućnosti: kreiranje/pregledavanje/ažuriranje stanja svog računa, 
+                        kreiranje/pregledavanje/ažuriranje zahtjeva za procjenu, pregled procjena za svoje zahtjeve, prihvaćanje procjene, 
+                        pretraživanje dijelova po marki vozila, kupnja dijelova od moderatora, prijava u aplikaciju te sve funkcionalnosti 
+                        koje ima i neregistrirani korisnik. Neregistrirani korisnik ima sljedeće mogućnosti: pregled rang liste broja 
+                        kupljenih dijelova po marki, pregled galerije slika kupljenih vozila, registracija, pregled stranice "O autoru" 
+                        te stranice "Dokumentacija projekta".</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="display" id="tablica2">
+                <thead>
+                    <tr>
+                        <th>Dijagram slučajeva korištenja s ulogama (navigacijski dijagram)</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td><img src="materijali/navigacijski.png" width="1450" height="1100" alt="autor"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="display" id="tablica2">
+                <thead>
+                    <tr>
+                        <th>Shema baze podataka (ERA model)</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td><img src="materijali/era.png" width="1450" height="1300" alt="autor"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="display" id="tablica2">
+                <thead>
+                    <tr>
+                        <th>Popis i opis skripata i datoteka od kojih se sastoji projekt, mapa mjesta</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td><b>Mapa "css":</b><br>
+                            - mforjan.css: dizajn aplikacije<br>
+                            <b>Mapa "izvorne_datoteke":</b><br>
+                            - mforjan.sql<br>
+                            - mforjan_workbench.mwb<br>
+                            - mforjan_workbench.mwb.bak<br>
+                            - navigacijski.xml<br>
+                            <b>Mapa "materijali":</b><br>
+                            - sadrži sve slike<br>
+                            <b>Mapa "obrasci":</b><br>
+                            - prijava.php: prijava korisnika u aplikaciju<br>
+                            - registracija.php: registracija korisnika<br>
+                            - validiraj.php: validacija korisnika<br>
+                            <b>Mapa "privatno":</b><br>
+                            - .htaccess: datoteka u kojoj se nalazi korisnik s istim korisničkim imenom i lozinkom kao i pristup do baze podataka<br>
+                            - .htpasswd: datoteka u kojoj se nalazi generirana lozinka<br>
+                            - korisnici.php: ispis svih korisnika<br>
+                            <b>"Source Files"</b><br>
+                            - baza.class.php: klasa koja služi za spajanje na bazu, izvršavanja SQL upita te odspajanje s baze<br>
+                            - blokiranjeKorisnika.php: administrator ima mogućnost blokiranja/odblokiranja korisnika<br>
+                            - dijelovi.php: moderator ima mogućnost kreiranja/pregledavanja/ažuriranja dijelova koje je izvadio iz kupljenog vozila<br>
+                            - dnevnik.class.php: klasa koja služi za unos informacija u dnevnik<br>
+                            - dokumentacija.html: pregled dokumentacije projekta<br>
+                            - galerija.php: neregistrirani korisnik ima mogućnost pregleda galerije slika kupljenih vozila<br>
+                            - index.php: početna stranica aplikacije<br>
+                            - kategorijeDijelova.php: administrator ima mogućnost kreiranja/pregledavanja/ažuriranja kategorija dijelova<br>
+                            - kupnjaDijelova.php: registrirani korisnik ima mogućnost pretraživanja dijelova po marki vozila te kupnje dostupnih dijelova<br>
+                            - markeVozila.php: administrator ima mogućnost kreiranja/pregledavanja/ažuriranja marke vozila te dodjeljivanje moderatora marki vozila<br>
+                            - o_autoru.html: pregled informacija o autoru<br>
+                            - pregledDnevnika.php: administrator ima mogućnost pregleda aktivnosti svih korisnika<br>
+                            - pregledZahtjeva.php: moderator ima mogućnost pregleda zahtjeva za procjenu vozila te unosa procjene za vozilo<br>
+                            - prihvaceneProcjene.php: moderator pregleda popis svojih prohvaćenih procjena s informacijama o vozilu<br>
+                            - prodajaVozila.php: registrirani korisnik ima mogućnost pregleda procjena za svoje zahtjeva te može prihvatiti procjenu<br>
+                            - rangLista.php: neregistrirani korisnik ima mogućnost pregleda broja svih kupljenih dijelova po marki vozila<br>
+                            - sesija.class.php: klasa sesija koja služi za pokretanje i završavanje sesije<br>
+                            - stanjeRacuna.php: registrirani korisnik ima mogućnost kreiranja/pregledavanja/ažuriranja stanja svog računa<br>
+                            - zaglavlje.php: odjava korisnika iz aplikacije<br>
+                        - zahtjevi.php: registrirani korisnik ima mogućnost kreiranja/pregledavanja/ažuriranja zahtjeva za procjenu vozila</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="display" id="tablica2">
+                <thead>
+                    <tr>
+                        <th>Popis i opis korištenih tehnologija i alata</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>Netbeans IDE - alat u kojem je izrađen projekt<br>
+                            MySQL Workbench - alat u kojem je dizajnirana baza podataka<br>
+                            Terminal - web server za testiranje<br>
+                            Filezilla - alat korišten za prijenos projekta na server<br>
+                            phpMyAdmin - izrada SQL upita, spremanje podataka u tablice te njihov prikaz<br>
+                            PHP - rad s bazom (prikaz podataka, SQL upiti, dohvaćanje podataka, pretraživanje podataka)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="display" id="tablica2">
+                <thead>
+                    <tr>
+                        <th>Popis i opis korištenih vanjskih izvora (moduli/biblioteke) i njihovo korištenje u skriptama</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>Google reCAPTCHA - provjera od automata (korišteno u skripti registracija.php)<br>
+                            CSS za dizajn padajućeg izbornika - preuzeto sa stranice W3Schools<br>
+                            meni, baza.class.php, dnevnik.class.php, sesija.class.php - preuzeto s materijala s nastave<br>
+                            prijava.php, registracija.php, validiraj.php - preuzeto s vlastitog projekta</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="display" id="tablica2">
+                <thead>
+                    <tr>
+                        <th>Opis završenosti projekta</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>Projekt je izrađen u postotku od otprilike 55%.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="display" id="tablica2">
+                <thead>
+                    <tr>
+                        <th>Popis uočenih problema u radu</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>Prilikom testiranja aplikacije nisu uočeni problemi.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        <footer>
+            <address><b>Kontakt:</b> 
+                <a style="color: white; text-decoration: none;" href="mailto:mforjan@foi.hr">
+                    Matej Forjan</a></address>
+            <p>&copy; 2022 M. Forjan</p>
+            <img style="width: 60px; height: 60px; position: relative; top: -7px;" src="materijali/HTML5.png" alt="Slika">
+            <img style="width: 75px; height: 75px; position: relative; top: 0px;" src="materijali/CSS3.png" alt="Slika">
+        </footer>
+    </body>
+</html>
