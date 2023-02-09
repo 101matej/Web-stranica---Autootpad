@@ -1,0 +1,426 @@
+/*tijelo*/
+body{
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 100%), url('../materijali/pozadina.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: #372b25;
+    font-family: "Comic Sans MS";
+    width: 100%;
+    margin: auto;
+}
+
+/*podnozje*/
+footer{
+    text-align: center;
+    color: white;
+    background: #254E24;
+    padding: 30px;
+    bottom: 0;
+}
+
+/*logo*/
+.pozicijaLoga{
+    text-align: center;
+    position: relative;
+    bottom: -10px;
+}
+
+.logo{
+    margin: auto;
+    left: 720px;
+    width: 250px;
+}
+
+/*naslov stranice*/
+.naslov{
+    font-family: "Arial";
+    margin: auto;
+    position: relative;
+    bottom: -10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #254E24;
+    padding-bottom: 50px;
+}
+
+/*navigacija*/
+.navigacija {
+  overflow: hidden;
+  background-color: #003B12;
+}
+
+.navigacija a {
+  float: left;
+  font-size: 16px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.padajuci {
+  float: left;
+  overflow: hidden;
+}
+
+.padajuci .padajuci-gumb {
+  font-size: 18px;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 50px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.navigacija a:hover, .padajuci:hover .padajuci-gumb {
+  background-color: #9CC49C;
+  color: black;
+}
+
+.padajuci-sadrzaj {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 298px;
+  z-index: 1;
+}
+
+.padajuci-sadrzaj a {
+  float: none;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+
+.padajuci-sadrzaj a:hover {
+  background-color: #9CC49C;
+}
+
+.padajuci:hover .padajuci-sadrzaj {
+  display: block;
+}
+
+/*welcome*/
+.welcome{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 470px;
+    padding-bottom: 200px;
+    margin: auto;
+    width: 50%;
+}
+
+/*forma*/
+.forma{
+    background-image: url('../materijali/forma.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+    border: 12px double #003B12;
+    width: 50%;
+}
+
+/*gumb za slanje podataka*/
+.submit{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black; 
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    background-color: white;
+    border: 3px solid #003B12;
+    
+}
+.submit:hover {
+  background-color: #003B12;
+  color: white;
+  font-weight: bolder;
+}
+
+/*gumb za slanje podataka*/
+.submit2{
+    height: 30px;
+    width: 300px;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black; 
+    background-color: white; 
+    border: 2px solid #003B12;
+}
+.submit2:hover {
+  background-color: #003B12;
+  color: white;
+  font-weight: bolder;
+}
+
+.g-recaptcha{
+    position: relative;
+    left: 325px;
+}
+
+/*tablica*/
+#tablica{
+    margin: auto;
+    position: relative;
+    background-color: #AFD9AF;
+    padding: 15px;
+    margin-bottom: 50px;
+    border: 8px double #003B12;
+    border-color: #003B12;
+}
+th{
+    height: 55px;
+    width: 250px;
+    font-size: 18px;
+    background-color: #003B12;
+    color: white;
+}
+td{
+    height: 35px;
+    text-align: center;
+    border: 1px solid;
+}
+tr:nth-child(even){
+    background-color: #D4F3D6;
+    color: black;
+}
+#naslovTablice{
+    font-size: 22px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+    color: #003B12
+}
+#tablica2{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    background-color: #AFD9AF;
+    padding: 15px;
+    margin-bottom: 50px;
+    border: 8px double #003B12;
+    border-color: #003B12;
+}
+
+/*gumb id*/
+#id{
+    width: 40px;
+    color: black;
+    background-color: white;
+}
+#id:hover {
+  background-color: #CFCFCF;
+  color: black;
+}
+
+/*gumbovi za sortiranje*/
+.submit3{
+    height: 30px;
+    width: 300px;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black; 
+    background-color: white; 
+    border: 2px solid #003B12;
+    margin-bottom: 20px;
+}
+.submit3:hover {
+  background-color: #003B12;
+  color: white;
+  font-weight: bolder;
+}
+
+.porukaOGresci{
+    color:darkred;
+    font-weight:bolder;
+    font-size:25px;
+    text-align:center;
+}
+
+.neispravanElement{
+    color: red;
+}
+
+/*textboxovi prijava*/
+.korimePrijavaTextbox{
+    border: 2px solid #58A05D;
+}
+.lozinkaPrijavaTextbox{
+    border: 2px solid #58A05D;
+}
+
+/*textboxovi registracija*/
+.imeRegistracijaTextbox{
+    border: 2px solid #58A05D;
+}
+.prezimeRegistracijaTextbox{
+    border: 2px solid #58A05D;
+}
+.datumRodenjaRegistracijaTextbox{
+    border: 2px solid #58A05D;
+}
+.emailRegistracijaTextbox{
+    border: 2px solid #58A05D;
+}
+.korimeRegistracijaTextbox{
+    border: 2px solid #58A05D;
+}
+.lozinkaRegistracijaTextbox{
+    border: 2px solid #58A05D;
+}
+.ponovljenaLozinkaRegistracijaTextbox{
+    border: 2px solid #58A05D;
+}
+
+/*textboxovi validacija*/
+.email{
+    border: 2px solid #58A05D;
+}
+.kljuc{
+    border: 2px solid #58A05D;
+}
+
+/*textboxovi marke vozila*/
+.idMarkeTextbox{
+    border: 2px solid #58A05D;
+}
+.nazivMarkeTextbox{
+    border: 2px solid #58A05D;
+}
+.datumKreiranjaTextbox{
+    border: 2px solid #58A05D;
+}
+#moderator{
+    border: 2px solid #58A05D;
+    width: 217px;
+}
+#markaVozila{
+    border: 2px solid #58A05D;
+    width: 217px;
+}
+
+/*textboxovi kategorije dijelova*/
+.idKategorijeTextbox{
+    border: 2px solid #58A05D;
+}
+.nazivKategorijeTextbox{
+    border: 2px solid #58A05D;
+}
+.datumKreiranjaKategorijeTextbox{
+    border: 2px solid #58A05D;
+}
+#kategorija{
+    border: 2px solid #58A05D;
+    width: 217px;
+}
+#markaVozila{
+    border: 2px solid #58A05D;
+    width: 217px;
+}
+
+/*textboxovi rang lista*/
+.datumPocetkaTextbox{
+    border: 2px solid #58A05D;
+}
+.datumKrajaTextbox{
+    border: 2px solid #58A05D;
+}
+
+/*textboxovi stanje racuna*/
+.IdStanjeTextbox{
+    border: 2px solid #58A05D;
+}
+.stanjeRacunaTextbox{
+    border: 2px solid #58A05D;
+}
+.bankaTextbox{
+    border: 2px solid #58A05D;
+}
+
+/*textboxovi dijelovi*/
+.IdDijelaTextbox{
+    border: 2px solid #58A05D;
+}
+.nazivDijelaTextbox{
+    border: 2px solid #58A05D;
+}
+.proizvodacDijelaTextbox{
+    border: 2px solid #58A05D;
+}
+.masaDijelaTextbox{
+    border: 2px solid #58A05D;
+}
+.opisDijelaTextbox{
+    border: 2px solid #58A05D;
+}
+.cijenaDijelaTextbox{
+    border: 2px solid #58A05D;
+}
+.datumKreiranjaDijelaTextbox{
+    border: 2px solid #58A05D;
+}
+#raspolozivo{
+    border: 2px solid #58A05D;
+}
+#vozilo{
+    border: 2px solid #58A05D;
+    width: 217px;
+}
+#kategorijaDijela{
+    border: 2px solid #58A05D;
+    width: 217px;
+}
+
+/*textboxovi procjena*/
+.cijenaTextbox{
+    border: 2px solid #58A05D;
+}
+.stanjeTextbox{
+    border: 2px solid #58A05D;
+}
+.nedostatakTextbox{
+    border: 2px solid #58A05D;
+}
+.zahtjevTextbox{
+    border: 2px solid #58A05D;
+}
+
+/*textboxovi zahtjevi*/
+.idZahtjevaTextbox{
+    border: 2px solid #58A05D;
+}
+.tipVozilaTextbox{
+    border: 2px solid #58A05D;
+}
+.godinaVozilaTextbox{
+    border: 2px solid #58A05D;
+}
+.masaVozilaTextbox{
+    border: 2px solid #58A05D;
+}
+.snagaMotoraTextbox{
+    border: 2px solid #58A05D;
+}
+.vrstaGorivaTextbox{
+    border: 2px solid #58A05D;
+}
+.slikaButton{
+    border: 2px solid #58A05D;
+}
+#markaVozilaZahtjev{
+    border: 2px solid #58A05D;
+    width: 217px;
+}
